@@ -12,34 +12,44 @@ namespace WordCounter.Tests
     [TestMethod]
     public void UserInputTest_IsThisAUsersInput_Bool_True()
     {
-      string userInput = "*Ca$T!1?";
-      bool result = userInput is string;
+      string userWord = "*Ca$T!1?";
+      bool result = userWord is string;
       Assert.AreEqual(true, result);
     }
 
     [TestMethod]
     public void Filter_FilterUserInputForWordCharactersWithRegex_String_True()
     {
-      string userInput = ("*Ca$T!1?").ToLower();
+      string userWord = ("*Ca$T!1?").ToLower();
       Regex Filter = new Regex(@"[^a-zA-Z]");
-      string result = Filter.Replace(userInput, "");
+      string result = Filter.Replace(userWord, "");
       Assert.AreEqual("cat", result);
     }
 
     [TestMethod]
     public void Filter_FilterUserInputForWordCharactersWithArray_String_True()
     {
-      string userInput = ("*Ca$T!1?").ToLower();
+      string userWord = ("*Ca$T!1?").ToLower();
       string[] filter = {"0","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")","?","<",">",".",","};
       foreach(string c in filter)
       {
-        if (userInput.Contains(c))
+        if (userWord.Contains(c))
         {
-          userInput = userInput.Replace(c, "");
+          userWord = userWord.Replace(c, "");
         }
       }
-      Assert.AreEqual("cat", userInput);
+      Assert.AreEqual("cat", userWord);
     }
+
+    [TestMethod]
+    public void SplitSentence_SplitUserSentenceIntoWords_Bool_True()
+    {
+      string userSentence = ("This is a cat").ToLower();
+      string[] sentenceArray = userSentence.Split(' ');
+      bool result = sentenceArray is string[];
+      Assert.AreEqual(true, result);
+    }
+
   } // end of CounterTests
 
 } // end of WordCounter.Tests
