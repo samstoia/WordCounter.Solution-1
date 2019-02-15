@@ -17,6 +17,20 @@ namespace WordCounter.Models
       }
       return input;
     }
+
+    public int Compare(string userWord, string userSentence)
+    {
+      string[] sentenceArray = userSentence.Split(' ');
+      int result = 0;
+      foreach(string word in sentenceArray)
+      {
+        if (word == userWord)
+        {
+          result++;
+        }
+      }
+      return result;
+    }
   } // end of Counter
 
 } // end of WordCounter.Models

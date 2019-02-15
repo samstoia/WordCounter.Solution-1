@@ -70,15 +70,7 @@ namespace WordCounter.Tests
     {
       string userWord = "cat";
       string userSentence = "this cat is a cat";
-      string[] sentenceArray = userSentence.Split(' ');
-      int result = 0;
-      foreach(string word in sentenceArray)
-      {
-        if (word == userWord)
-        {
-          result++;
-        }
-      }
+      int result = new Counter().Compare(userWord, userSentence);
       Assert.AreEqual(2, result);
     }
 
