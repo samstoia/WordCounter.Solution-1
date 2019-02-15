@@ -13,18 +13,27 @@ namespace WordCounter
       string userWord = counter.Filter(Console.ReadLine().ToLower());
       Console.WriteLine("\nNow please write out a sentence to compare:");
       string userSentence = counter.Filter(Console.ReadLine().ToLower());
-      Console.WriteLine("\n-----\n\nGreat! Time to do some counting! Please any key to continue.\n\n-----");
-      Console.ReadKey();
-      int result = new Counter().Compare(userWord, userSentence);
-      if (result == 0)
-      {
-        Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has NO matches found in '{userSentence}'...\n");
-      }
-      else
-      {
-        Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has {result} matches found in '{userSentence}', congratulations!\n");
-      }
-      Console.Read();
+      if ((userWord == "") || (userSentence == ""))
+        {
+          Console.WriteLine("Whoops! Looks like you didn't enter anything, do it again!\n\n-----\n");
+          Console.Read();
+          Main();
+        }
+        else
+        {
+          Console.WriteLine("\n-----\n\nGreat! Time to do some counting! Please any key to continue.\n\n-----");
+          Console.ReadKey();
+          int result = new Counter().Compare(userWord, userSentence);
+          if (result == 0)
+          {
+            Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has NO matches found in '{userSentence}'...\n");
+          }
+          else
+          {
+            Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has {result} matches found in '{userSentence}', congratulations!\n");
+          }
+          Console.ReadKey();
+        }
     }
 
   } // end of Program
