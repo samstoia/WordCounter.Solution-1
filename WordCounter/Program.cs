@@ -21,13 +21,9 @@ namespace WordCounter
       {
         Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has NO matches found in '{userSentence}'...");
       }
-      else if (result >= 0)
-      {
-        Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has {result} matches found in '{userSentence}'!");
-      }
       else
       {
-        Console.WriteLine("You broke it...Why!?");
+        Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has {result} matches found in '{userSentence}'!");
       }
     }
 
