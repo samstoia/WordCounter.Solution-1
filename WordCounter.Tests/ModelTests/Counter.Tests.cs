@@ -30,30 +30,16 @@ namespace WordCounter.Tests
     public void Filter_FilterUserWordForWordCharactersWithArray_String_True()
     {
       string userWord = ("*Ca$T!1?").ToLower();
-      string[] filter = {"0","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")","?","<",">",".",","};
-      foreach(string c in filter)
-      {
-        if (userWord.Contains(c))
-        {
-          userWord = userWord.Replace(c, "");
-        }
-      }
-      Assert.AreEqual("cat", userWord);
+      string result = new Counter().Filter(userWord);
+      Assert.AreEqual("cat", result);
     }
 
     [TestMethod]
     public void Filter_FilterUserSentenceForWordCharactersWithArray_String_True()
     {
       string userSentence = ("Th3i#s$$ I,s A ca9T!!1").ToLower();
-      string[] filter = {"0","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")","?","<",">",".",","};
-      foreach(string c in filter)
-      {
-        if (userSentence.Contains(c))
-        {
-          userSentence = userSentence.Replace(c, "");
-        }
-      }
-      Assert.AreEqual("this is a cat", userSentence);
+      string result = new Counter().Filter(userSentence);
+      Assert.AreEqual("this is a cat", result);
     }
 
     [TestMethod]
