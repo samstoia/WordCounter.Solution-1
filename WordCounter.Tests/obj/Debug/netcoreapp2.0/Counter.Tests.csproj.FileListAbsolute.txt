@@ -1,0 +1,15 @@
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/obj/Debug/netcoreapp2.0/Counter.Tests.csproj.CoreCompileInputs.cache
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/obj/Debug/netcoreapp2.0/Counter.Tests.AssemblyInfoInputs.cache
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/obj/Debug/netcoreapp2.0/Counter.Tests.AssemblyInfo.cs
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Counter.Tests.deps.json
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Counter.Tests.runtimeconfig.json
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Counter.Tests.runtimeconfig.dev.json
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Counter.Tests.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Counter.Tests.pdb
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Counter.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/bin/Debug/netcoreapp2.0/Counter.pdb
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/obj/Debug/netcoreapp2.0/Counter.Tests.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter.Tests/obj/Debug/netcoreapp2.0/Counter.Tests.pdb

@@ -20,8 +20,8 @@ A simple program that counts the number of occurrences in a user-inputted string
 
 | Behavior | Input | Output |
 |----------|:-----:|:------:|
-| Program accepts user inputs | "\Ca$T!1?" | "\Ca$T!1?" |
-| Word and sentence filtered for cohesion | "\Ca$T!1?" | "cat" |
+| Program accepts user inputs | "*Ca$T!1?" | "\Ca$T!1?" |
+| Word and sentence filtered for cohesion | "*Ca$T!1?" | "cat" |
 | Sentence broken into word-only array | "That is a cat." | "that, is, a, cat" |
 | Compare word to array | "cat" == "this, is, a, cat" | Match success |
 | Program counts number of match occurrences | "cat" = "that, cat, is, a, cat" | 2 |

@@ -1,0 +1,8 @@
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/bin/Debug/netcoreapp2.0/Counter.deps.json
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/bin/Debug/netcoreapp2.0/Counter.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/bin/Debug/netcoreapp2.0/Counter.pdb
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/obj/Debug/netcoreapp2.0/Counter.csproj.CoreCompileInputs.cache
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/obj/Debug/netcoreapp2.0/Counter.AssemblyInfoInputs.cache
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/obj/Debug/netcoreapp2.0/Counter.AssemblyInfo.cs
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/obj/Debug/netcoreapp2.0/Counter.dll
+/home/LondresRi/Desktop/WordCounter.Solutions/WordCounter/obj/Debug/netcoreapp2.0/Counter.pdb
