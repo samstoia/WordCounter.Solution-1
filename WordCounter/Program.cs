@@ -21,7 +21,7 @@ namespace WordCounter
         }
         else
         {
-          Console.WriteLine("\n-----\n\nGreat! Time to do some counting! Please any key to continue.\n\n-----");
+          Console.WriteLine("\n-----\n\nGreat! Time to do some counting! Press any key to continue.\n\n-----");
           Console.ReadKey();
           int result = new Counter().Compare(userWord, userSentence);
           if (result == 0)
