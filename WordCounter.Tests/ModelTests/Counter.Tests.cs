@@ -42,6 +42,21 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
+    public void Filter_FilterUserSentenceForWordCharactersWithArray_String_True()
+    {
+      string userSentence = ("Th3i#s$$ I,s A ca9T!!1").ToLower();
+      string[] filter = {"0","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")","?","<",">",".",","};
+      foreach(string c in filter)
+      {
+        if (userSentence.Contains(c))
+        {
+          userSentence = userSentence.Replace(c, "");
+        }
+      }
+      Assert.AreEqual("this is a cat", userSentence);
+    }
+
+    [TestMethod]
     public void SplitSentence_SplitUserSentenceIntoWords_Bool_True()
     {
       string userSentence = "this is a cat";
