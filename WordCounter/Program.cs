@@ -19,10 +19,12 @@ namespace WordCounter
       if (result == 0)
       {
         Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has NO matches found in '{userSentence}'...\n");
+        Console.ReadKey();
       }
       else
       {
         Console.WriteLine($"{char.ToUpper(userWord[0])}{userWord.Substring(1)} has {result} matches found in '{userSentence}', congratulations!\n");
+        Console.ReadKey();
       }
     }
 
