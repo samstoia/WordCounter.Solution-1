@@ -2,15 +2,15 @@
 |:-----:|
 | [**LondresRi**](https://github.com/LondresRi )|
 
-## | **Word Counter** |
+## | **Word Counter Project** |
 
-#### The Word Counter Project, initiated February 15th, 2019
 #### By Shawn Lunsford
+###### Initiated February 15th, 2019. Last Updated February 19th, 2019.
 
 ----------
 
 ## Description
-A simple program that counts the number of occurrences in a user-inputted string that a user's word appears. Part of the Epicodus C# courseword, independent project, coded in C#.
+A simple program that counts the number of occurrences in a user-inputted string that a user's word appears. Part of the Epicodus C# coursework, independent project, coded in C#.
 
 ## Known Bugs
 
@@ -20,7 +20,7 @@ A simple program that counts the number of occurrences in a user-inputted string
 
 | Behavior | Input | Output |
 |----------|:-----:|:------:|
-| Program accepts user inputs | "*Ca$T!1?" | "\Ca$T!1?" |
+| Program accepts user inputs | "\Ca$T!1?" | "\Ca$T!1?" |
 | Word and sentence filtered for cohesion | "*Ca$T!1?" | "cat" |
 | Sentence broken into word-only array | "That is a cat." | "that, is, a, cat" |
 | Compare word to array | "cat" == "this, is, a, cat" | Match success |
@@ -30,19 +30,26 @@ A simple program that counts the number of occurrences in a user-inputted string
 ## Setup and Use
 
 #### Prerequisites
-* Must have a working browser, IDE, and terminal.
-* Must have basic computer use proficiency
+* .NET Core 1.1 SDK or higher
+* .NET Core Runtime 1.1 or higher
+* [Mono](https://www.mono-project.com/)
+
+#### Download Repo
+1. Download required software: .NET Core SDK, .NET Core Runtime, Mono
+2. Clone [this repository](https://github.com/LondresRi/WordCounter.Solution): _$ git clone (repo HTTPS)_
 
 #### Open Locally
-1. Navigate to [my repo](https://github.com/LondresRi/WordCounter) at GitHub.com/LondresRi/WordCounter
-2. Clone the repository using the [HTTPS URL](https://github.com/LondresRi/WordCounter) or download the zip file.
-3. Open the Program.exe file or alternatively use your preferred IDE to view code.
+1. Navigate to the working directory: _$ cd WordCounter.Solution_
+2. Use your preferred IDE or editor to edit the project
+3. Open the Program.exe file or use _$ mono Program.exe_ to run application
 
-### Compile Locally
-1. Navigate to [my repo](https://github.com/LondresRi/WordCounter) at GitHub.com/LondresRi/WordCounter
-2. Clone the repository using the [HTTPS URL](https://github.com/LondresRi/WordCounter) or download the zip file.
-3. Open with preferred IDE, go to Counter.csproj and Counter.Test.csproj, edit netcoreapp, Microsoft.NET.Test.Sdk, MSTest.TestAdapter, MSTest.TestFramework to versions suitable to you.
-4. Navigate to the WordCounter directory and use "mcs Program.cs Models/Counter.cs; mono Program.exe" to compile.
+#### Compile Locally
+1. Navigate to the project directory: _$ cd WordCounter.Solution/WordCounter_
+2. Execute _$ mcs Program.cs Models/Counter.cs_ to compile new Program.exe file
+
+#### Test Locally
+1. Navigate to the working directory: _$ cd WordCounter.Solution/WordCounter.Tests_
+2. Execute _$ dotnet tests_ to run application tests
 
 
 ## Built With
