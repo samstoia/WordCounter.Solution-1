@@ -25,6 +25,11 @@ namespace WordCounter.Models
     }
     public int GetResult()
     {
+      string userWord = _userWord;
+      string userSentence = _userSentence;
+      string word = Filter(userWord);
+      string sentence = Filter(userSentence);
+      int result = Compare(word, sentence);
       return result;
     }
 
