@@ -26,21 +26,21 @@ namespace WordCounter.Tests
       Assert.AreEqual("cat", result);
     }
 
-    [TestMethod]
-    public void Filter_FilterUserWordForWordCharactersWithArray_String_True()
-    {
-      string userWord = ("*Ca$T!1?").ToLower();
-      string result = new Counter().Filter(userWord);
-      Assert.AreEqual("cat", result);
-    }
-
-    [TestMethod]
-    public void Filter_FilterUserSentenceForWordCharactersWithArray_String_True()
-    {
-      string userSentence = ("Th3i#s$$ I,s A ca9T!!1").ToLower();
-      string result = new Counter().Filter(userSentence);
-      Assert.AreEqual("this is a cat", result);
-    }
+    // [TestMethod]
+    // public void Filter_FilterUserWordForWordCharactersWithArray_String_True()
+    // {
+    //   string userWord = ("*Ca$T!1?").ToLower();
+    //   string result = new Counter().Filter(userWord);
+    //   Assert.AreEqual("cat", result);
+    // }
+    //
+    // [TestMethod]
+    // public void Filter_FilterUserSentenceForWordCharactersWithArray_String_True()
+    // {
+    //   string userSentence = ("Th3i#s$$ I,s A ca9T!!1").ToLower();
+    //   string result = new Counter().Filter(userSentence);
+    //   Assert.AreEqual("this is a cat", result);
+    // }
 
     [TestMethod]
     public void SplitSentence_SplitUserSentenceIntoWords_Bool_True()
@@ -65,14 +65,14 @@ namespace WordCounter.Tests
       Assert.AreEqual(true, result);
     }
 
-    [TestMethod]
-    public void Match_CompareUserWordToUserSentenceForMatch_Int_2()
-    {
-      string userWord = "cat";
-      string userSentence = "this cat is a cat";
-      int result = new Counter().Compare(userWord, userSentence);
-      Assert.AreEqual(2, result);
-    }
+    // [TestMethod]
+    // public void Match_CompareUserWordToUserSentenceForMatch_Int_2()
+    // {
+    //   string userWord = "cat";
+    //   string userSentence = "this cat is a cat";
+    //   int result = new Counter().Compare(userWord, userSentence);
+    //   Assert.AreEqual(2, result);
+    // }
 
   } // end of CounterTests
 

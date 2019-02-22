@@ -13,15 +13,11 @@ namespace WordCounter.Controllers
       return View("Index");
     }
 
-    [HttpPost("/counter")]
-    public ActionResult Count(string userWord, string userSentence)
+    [HttpGet("/counter/new")]
+    public ActionResult New(string userWord, string userSentence)
     {
-      // Counter counter = new Counter();
-      // string filterWord = counter.Filter(userWord);
-      // string filterSentence = counter.Filter(userSentence);
-      // int result = counter.Compare(filterWord, filterSentence);
       Counter counter = new Counter(userWord, userSentence);
-      return View("Index", counter);
+      return View("New", counter);
     }
   } // end CounterController
 } // end WordCounter

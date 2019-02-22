@@ -7,6 +7,7 @@ namespace WordCounter.Models
   {
     private string _userWord;
     private string _userSentence;
+    public int result;
 
     public Counter(string userWord, string userSentence)
     {
@@ -21,6 +22,10 @@ namespace WordCounter.Models
     public string GetUserSentence()
     {
       return _userSentence;
+    }
+    public int GetResult()
+    {
+      return result;
     }
 
     public string Filter(string input)
