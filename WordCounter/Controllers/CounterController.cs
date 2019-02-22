@@ -14,7 +14,13 @@ namespace WordCounter.Controllers
     }
 
     [HttpGet("/counter/new")]
-    public ActionResult New(string userWord, string userSentence)
+    public ActionResult NewGet()
+    {
+      return View();
+    }
+
+    [HttpPost("/counter/new")]
+    public ActionResult NewPost(string userWord, string userSentence)
     {
       Counter counter = new Counter(userWord, userSentence);
       return View("New", counter);

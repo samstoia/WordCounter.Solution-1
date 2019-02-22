@@ -17,12 +17,12 @@ namespace WordCounter.Tests
       }
 
       [TestMethod]
-      public void NewCompare_CompareMatchOfWordAndSentence_True()
+      public void NewPost_CompareMatchOfWordAndSentence_True()
       {
         string testWord = "cat";
         string testSentence = "that cat is a cat";
-        ActionResult compareView = new CounterController().New(testWord, testSentence);
-        Assert.AreEqual("New", compareView);
+        ActionResult compareView = new CounterController().NewPost(testWord, testSentence);
+        Assert.AreEqual("NewPost", compareView);
       }
 
     }
