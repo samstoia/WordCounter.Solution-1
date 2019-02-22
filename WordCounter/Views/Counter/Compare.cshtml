@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 class="jumbotron">The Amazing Word Counter!</h1>
+<h3>Enter a word and sentence to compare:</h3>
+<form action="/counter" method="post">
+  <label for="userWord">Your Word</label>
+  <input id="userWord" name="userWord" type="text">
+  <label for="userSentence">Your Sentence</label>
+  <input id="userSentence" name="userSentence" type="text">
+  <button type="submit">Compare!</button>
+</form>

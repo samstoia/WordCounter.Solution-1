@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.PlatformAbstractions;
 using WordCounter.Models;
 
 namespace WordCounter.Controllers
@@ -14,7 +13,7 @@ namespace WordCounter.Controllers
       return View("Index");
     }
 
-    [HttpGet("/counter/match")]
+    [HttpPost("/counter")]
     public ActionResult Compare(string userWord, string userSentence)
     {
       Counter counter = new Counter();
