@@ -17,6 +17,13 @@ namespace WordCounter.Tests
       }
 
       [TestMethod]
+      public void NewGet_ReturnCorrectViewOfIndex_True()
+      {
+        ActionResult newView = new CounterController().NewGet();
+        Assert.IsInstanceOfType(newView, typeof(ViewResult));
+      }
+
+      [TestMethod] // FAILS------------------------------------------
       public void NewPost_CompareMatchOfWordAndSentence_True()
       {
         string testWord = "cat";

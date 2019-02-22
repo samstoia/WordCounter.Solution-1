@@ -4,9 +4,9 @@
 }
 
 <div class="container">
-  <h3>Your Word Counter Results:</h3>
-  @Model.GetUserWord()
-  @Model.GetUserSentence()
-  @Model.GetResult()
+  <h3>Your Counter Results:</h3>
+  <br>
+  <p>Your word "@Model.GetUserWord()" matches "@Model.GetUserSentence()" -- @Model.GetResult() times!</p>
+  <br>
   <a href="/counter">Start Again!</a>
 </div>
