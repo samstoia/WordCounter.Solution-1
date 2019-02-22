@@ -14,13 +14,14 @@ namespace WordCounter.Controllers
     }
 
     [HttpPost("/counter")]
-    public ActionResult Compare(string userWord, string userSentence)
+    public ActionResult Count(string userWord, string userSentence)
     {
-      Counter counter = new Counter();
-      string filterWord = counter.Filter(userWord);
-      string filterSentence = counter.Filter(userSentence);
-      int result = counter.Compare(filterWord, filterSentence);
-      return View("Index", result);
+      // Counter counter = new Counter();
+      // string filterWord = counter.Filter(userWord);
+      // string filterSentence = counter.Filter(userSentence);
+      // int result = counter.Compare(filterWord, filterSentence);
+      Counter counter = new Counter(userWord, userSentence);
+      return View("Index", counter);
     }
   } // end CounterController
 } // end WordCounter

@@ -5,6 +5,24 @@ namespace WordCounter.Models
 {
   public class Counter
   {
+    private string _userWord;
+    private string _userSentence;
+
+    public Counter(string userWord, string userSentence)
+    {
+      _userWord = userWord;
+      _userSentence = userSentence;
+    }
+
+    public string GetUserWord()
+    {
+      return _userWord;
+    }
+    public string GetUserSentence()
+    {
+      return _userSentence;
+    }
+
     public string Filter(string input)
     {
       string[] filter = {"0","1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")","?","<",">",".",",","=","+","-","_","[","]","{","}","|","`","~","/","\\"};
