@@ -1,0 +1,11 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../assets/css/styles.css" type="text/css" media="all">
+    <title>Word Counter</title>
+  </head>
+  <body>
+    @RenderBody()
+  </body>
+</html>
