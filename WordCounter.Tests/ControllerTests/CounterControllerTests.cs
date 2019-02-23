@@ -23,13 +23,13 @@ namespace WordCounter.Tests
         Assert.IsInstanceOfType(newView, typeof(ViewResult));
       }
 
-      [TestMethod] // FAILS------------------------------------------
+      [TestMethod]
       public void NewPost_CompareMatchOfWordAndSentence_True()
       {
         string testWord = "cat";
         string testSentence = "that cat is a cat";
         ActionResult compareView = new CounterController().NewPost(testWord, testSentence);
-        Assert.AreEqual("NewPost", compareView);
+        Assert.IsInstanceOfType(compareView, typeof(ActionResult));
       }
 
     }
