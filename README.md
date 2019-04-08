@@ -4,7 +4,7 @@
 
 ## | **Word Counter Project** |
 
-#### By Shawn Lunsford
+#### By Shawn Lunsford & Sam Stoia
 ###### Initiated February 15th, 2019. Last Updated February 19th, 2019.
 
 ----------
